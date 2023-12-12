@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>24) Crie um programa que leia três números inteiros e exiba-os em ordem crescente.</h2>
+
+    <script>
+
+        var primeiro_numero = prompt('Digite o primeiro número:')
+        var segundo_numero = prompt('Digite o segundo número:')
+        var terceiro_numero = prompt('Digite o terceiro número:')
+
+        if (primeiro_numero > segundo_numero && segundo_numero > terceiro_numero) {
+            alert('Ordem crescente: ' + terceiro_numero + ', ' + segundo_numero + ' e ' + primeiro_numero + '.')
+        } else if (segundo_numero > primeiro_numero && primeiro_numero > terceiro_numero) {
+            alert('Ordem crescente: ' + terceiro_numero + ', ' + primeiro_numero + ' e ' + segundo_numero + '.')
+        } else if (primeiro_numero > terceiro_numero && terceiro_numero > segundo_numero) {
+            alert('Ordem crescente: ' + segundo_numero + ', ' + terceiro_numero + ' e ' + primeiro_numero + '.')
+        } else if (terceiro_numero > primeiro_numero && primeiro_numero > segundo_numero) {
+            alert('Ordem crescente: ' + segundo_numero + ', ' + primeiro_numero + ' e ' + terceiro_numero + '.')
+        } else if (segundo_numero > terceiro_numero && terceiro_numero > primeiro_numero) {
+            alert('Ordem crescente: ' + primeiro_numero + ', ' + terceiro_numero + ' e ' + segundo_numero + '.')
+        } else if (terceiro_numero > segundo_numero && segundo_numero > primeiro_numero) {
+            alert('Ordem crescente: ' + primeiro_numero + ', ' + segundo_numero + ' e ' + terceiro_numero + '.')
+        } else {
+            alert('Nenhum dos números podem ser iguais.')
+        }
+
+    </script>
+</body>
+
+</html>

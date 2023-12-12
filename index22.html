@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>22) Faça um programa que receba o salário de um funcionário e exiba o valor do seu bônus. Se o salário for maior que R$ 2000, o bônus é de 10%, caso contrário, é de 5%.</h2>
+
+    <script>
+
+        var salario = parseInt(prompt('Digite o salário do funcionário:'))
+        var bonus
+
+        if (salario > 2000) {
+            bonus = salario * 10 / 100
+        } else {
+            bonus = salario * 5 / 100
+        }
+
+        alert('O salário do funcionário é R$ ' + salario + '.\nE o seu bônus R$ ' + bonus + '.')
+
+    </script>
+</body>
+
+</html>

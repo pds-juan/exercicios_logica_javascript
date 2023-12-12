@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>14) Escreva um programa que leia a idade de uma pessoa em anos, meses e dias, e calcule quantos dias de vida ela tem.</h2>
+
+    <script>
+
+        var idade_anos = parseInt(prompt('Digite seus anos de idade (apenas os anos):'))
+        var idade_meses = parseInt(prompt('Digite seus meses de idade (apenas os meses):'))
+        var idade_dias = parseInt(prompt('Digite seus dias de idade (apenas os dias):'))
+        var total_idade_dias = idade_dias + idade_meses * 30 + idade_anos * 365
+
+        alert('Você tem ' + total_idade_dias + ' dias de idade.')
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>74) Crie um programa que leia o nome e a idade de 5 pessoas e exiba a média das idades.</h2>
+
+    <script>
+
+        var idade, media = 0
+
+        for (let contador = 1; contador <= 5; contador++) {
+            idade = parseInt(prompt('Digite a idade da ' + contador + 'ª pessoa:'))
+            media = (media + idade)
+        }
+
+        media = media / 5
+        alert('A média das idades é ' + media + '.')
+
+    </script>
+</body>
+
+</html>

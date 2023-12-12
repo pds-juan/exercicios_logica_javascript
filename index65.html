@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>65) Crie um programa que leia o nome e a idade de várias pessoas usando o loop "do-while" até que o nome "fim" seja informado. Ao final, exiba a média das idades.</h2>
+
+    <script>
+
+        var nome = prompt('Digite o nome de uma pessoa:').toLowerCase()
+        var idade, media = 0, contador = 0
+
+        do {
+            idade = parseInt(prompt('Digite a idade dessa pessoa:'))
+            media = media + idade
+
+            nome = prompt('Digite o nome de uma pessoa:').toLowerCase()
+            contador++
+        } while (nome != 'fim')
+
+        media = media / contador
+        alert('A média de idade é ' + media + ' anos.')
+
+    </script>
+</body>
+
+</html>

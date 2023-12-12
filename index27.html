@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>27) Crie um programa que leia a idade de uma pessoa e seu sexo (M ou F) e exiba uma mensagem indicando se ela pode ou não se aposentar. Homens podem se aposentar com 65 anos ou mais, e mulheres com 60 anos ou mais.</h2>
+
+    <script>
+
+        var idade = parseInt(prompt('Digite a sua idade:'))
+        var sexo = prompt('Digite o seu sexo: (M ou F)').toLowerCase()
+
+        switch (sexo) {
+            case 'm':
+            case 'masc':
+            case 'masculino':
+
+                if (idade >= 65) {
+                    alert('A pessoa pode se aposentar')
+                } else {
+                    alert('A pessoa não pode se aposentar')
+                }
+
+                break;
+
+            case 'f':
+            case 'fem':
+            case 'feminino':
+
+                if (idade >= 60) {
+                    alert('A pessoa pode se aposentar')
+                } else {
+                    alert('A pessoa não pode se aposentar')
+                }
+
+                break;
+
+            default:
+                alert('ERRO!')
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

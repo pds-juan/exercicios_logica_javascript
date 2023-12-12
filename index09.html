@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>9) Crie um programa que leia o valor do depósito mensal em uma poupança e a taxa de juros mensal, e calcule o montante após 12 meses.</h2>
+
+    <script>
+
+        var valor_deposito = parseInt(prompt('Digite o valor de depósito mensal da poupança:'))
+        var taxa_juros = parseInt(prompt('Digite a taxa de juros:'))
+        var contador = 0
+        var montante = 0
+
+        do {
+            montante = montante + valor_deposito
+            montante = montante + (taxa_juros / 100 * montante)
+            contador++
+        } while (contador < 12);
+
+        alert('O valor acumulado é de R$ ' + montante + '.')
+
+    </script>
+</body>
+
+</html>

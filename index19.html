@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>19) Faça um programa que receba três notas de um aluno e exiba se ele foi aprovado ou reprovado. A média para aprovação é 7.</h2>
+
+    <script>
+
+        var primeira_nota = parseFloat(prompt('Digite a primeira nota:'))
+        var segunda_nota = parseFloat(prompt('Digite a segunda nota:'))
+        var terceira_nota = parseFloat(prompt('Digite a terceira nota:'))
+        var media = (primeira_nota + segunda_nota + terceira_nota) / 3
+
+        if (media >= 7) {
+            alert('O aluno foi aprovado!')
+        } else {
+            alert('Aluno reprovado!')
+        }
+
+    </script>
+</body>
+
+</html>

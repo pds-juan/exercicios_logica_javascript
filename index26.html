@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>26) Escreva um programa que leia o código de um produto e a quantidade comprada, e exiba o valor total a ser pago. Considere que cada produto tem um preço diferente.</h2>
+
+    <script>
+
+        var codigo = prompt('Digite o código do produto:')
+        var quantidade = parseInt(prompt('Digite a quantidade adquirida:'))
+        var preco = 0, valor_pagar = 0
+
+        if (codigo == 'prod_01') {
+            preco = 3.10;
+        } else if (codigo == 'prod_02') {
+            preco = 4.10;
+        } else if (codigo == 'prod_03') {
+            preco = 5.10;
+        } else if (codigo == 'prod_04') {
+            preco = 7.10;
+        } else if (codigo == 'prod_05') {
+            preco = 8.10;
+        }
+
+        valor_pagar = quantidade * preco
+        alert('Valor a pagar: R$ ' + valor_pagar + '.')
+
+    </script>
+</body>
+
+</html>

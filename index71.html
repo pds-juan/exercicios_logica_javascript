@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>71) Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número.</h2>
+
+    <script>
+
+        var numero = parseInt(prompt('Digite um número inteiro positivo:'))
+
+        for (var contador = 1; contador <= numero; contador++) {
+            if (numero % contador == 0) {
+                alert(contador+' é um divisor de '+numero+'.')
+            }
+        }
+
+    </script>
+</body>
+
+</html>

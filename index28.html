@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>28) Faça um programa que leia o peso e a altura de uma pessoa e exiba o seu Índice de Massa Corporal (IMC) e a sua classificação. Considere a tabela de classificação do IMC.</h2>
+
+    <script>
+
+        var peso = parseFloat(prompt('Digite o seu peso: (em Kg)'))
+        var altura = parseFloat(prompt('Digite a sua altura: (em metros)'))
+        var IMC = (peso / (altura * altura)).toFixed(2);
+        var classificacao
+
+        if (IMC < 18.5) {
+            classificacao = 'magreza'
+        } else if (IMC < 24.9) {
+            classificacao = 'normal'
+        } else if (IMC < 30) {
+            classificacao = 'sobrepeso'
+        } else if (IMC > 30) {
+            classificacao = 'obesidade'
+        }
+
+        alert('O seu Índice de Massa Corporal (IMC) é ' + IMC + '.\nSua classificação é ' + classificacao + '.')
+
+    </script>
+</body>
+
+</html>

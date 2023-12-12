@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>1) Faça um programa que solicite dois números inteiros e exiba a soma, subtração, multiplicação e divisão entre eles.</h2>
+
+    <script>
+
+        var numero_um = parseInt(prompt('Digite o primeiro número:'))
+        var numero_dois = parseInt(prompt('Digite o segundo número:'))
+        var soma = (numero_um + numero_dois)
+        var sub, div
+        var mult = (numero_um * numero_dois)
+
+        if (numero_um > numero_dois) {
+            sub = (numero_um - numero_dois)
+        } else {
+            sub = (numero_dois - numero_um)
+        }
+
+        if (numero_um > numero_dois) {
+            div = (numero_um / numero_dois)
+        } else {
+            div = (numero_dois / numero_um)
+        }
+
+        alert('A soma dos números é igual a ' + soma + '.\nA subtração do maior pelo menor número é ' + sub + '.\nA multiplicação dos números é igual a ' + mult + '.\nA divisão do maior pelo menor número é ' + div + '.')
+
+    </script>
+</body>
+
+</html>

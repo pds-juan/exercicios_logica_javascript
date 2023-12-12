@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>21) Crie um programa que leia a idade de um grupo de pessoas e exiba quantas são menores de idade e quantas são maiores de idade.</h2>
+
+    <script>
+
+        var continuar = ('sim')
+        var idade, maiores_idade = 0, menores_idade = 0
+
+        do {
+            idade = prompt('Digite a idade de uma pessoa do grupo:')
+
+            if (idade < 18) {
+                menores_idade++
+            } else {
+                maiores_idade++
+            }
+
+            continuar = prompt('Deseja continuar?').toLowerCase()
+        } while (continuar == 'sim');
+
+        alert(menores_idade + ' pessoas são menores de idade.\n' + maiores_idade + ' pessoas são maiores de idade.')
+
+    </script>
+</body>
+
+</html>

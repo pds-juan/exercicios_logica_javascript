@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>58) Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "do-while".</h2>
+
+    <script>
+
+        let limite = parseInt(prompt('Digite até qual posição deseja gerar a sequência de Fibonacci:'))
+        let anterior = 0, sequencia = 1, proximo = (anterior + sequencia), contador = 2
+
+        do {
+            alert(anterior + ' + ' + sequencia + ' = ' + proximo)
+            anterior = sequencia
+            sequencia = proximo
+            proximo = (anterior + sequencia)
+            contador++
+        } while (contador <= limite)
+
+    </script>
+</body>
+
+</html>

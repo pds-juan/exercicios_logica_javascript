@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>23) Escreva um programa que leia o nome de um mês e exiba a quantidade de dias que ele possui. Considere apenas meses válidos.</h2>
+
+    <script>
+
+        var mes = prompt('Digite o nome do mês:').toLowerCase()
+
+        if (mes == 'janeiro' || mes == 'março' || mes == 'maio' || mes == 'julho' || mes == 'agosto' || mes == 'outubro' || mes == 'dezembro') {
+            alert('O mês de ' + mes + ' tem 31 dias.')
+        } else if (mes == 'abril' || mes == 'junho' || mes == 'setembro' || mes == 'novembro') {
+            alert('O mês de ' + mes + ' tem 30 dias.')
+        } else if (mes == 'fevereiro') {
+            alert('O mês de ' + mes + ' tem 28 dias. Ou em anos bissextos, 29 dias.')
+        } else {
+            alert('Mês não existe!')
+        }
+
+        /*switch (mes) {
+            case 'janeiro':
+            case 'março':
+            case 'maio':
+            case 'julho':
+            case 'agosto':
+            case 'outubro':
+            case 'dezembro':
+                alert('O mês de ' + mes + ' tem 31 dias.')
+                break;
+        
+            case 'abril':
+            case 'junho':
+            case 'setembro':
+            case 'novembro':
+                alert('O mês de ' + mes + ' tem 30 dias.')
+                break;
+        
+            case 'fevereiro':
+                alert('O mês de ' + mes + ' tem 28 dias. Ou em anos bissextos, 29 dias.')
+                break;
+        
+            default:
+                alert('Mês não existe!')
+                break;
+        } */
+
+    </script>
+</body>
+
+</html>

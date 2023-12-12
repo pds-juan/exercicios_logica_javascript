@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>39) Faça um programa que leia 5 números inteiros usando o loop "while" e exiba a média aritmética dos valores lidos.</h2>
+
+    <script>
+
+        let contador = 1, numero, media = 0
+
+        while (contador <= 5) {
+            numero = parseFloat(prompt('Digite o valor do número '+contador+'.'))
+            media = media + numero
+            contador++
+        }
+
+        media = media / 5
+        alert('A média dos valores lidos é '+media+'.')
+
+    </script>
+</body>
+
+</html>

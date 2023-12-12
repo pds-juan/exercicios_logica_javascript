@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>57) Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "do-while".</h2>
+
+    <script>
+
+        var numero = parseInt(prompt('Digite um número inteiro:'))
+        var contador = 0, divisor = 0
+
+        do {
+            if (numero % divisor == 0) {
+                contador++
+                alert('Múltiplo de ' + divisor)
+            }
+            divisor++
+        } while (divisor <= numero)
+        
+        if (contador == 2) {
+            alert(numero + ' é primo!')
+        } else {
+            alert('O número ' + numero + ' tem ' + contador + ' divisores:\n' + numero + ' não é primo!')
+        }
+
+    </script>
+</body>
+
+</html>

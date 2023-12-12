@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>43) Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "while".</h2>
+
+    <script>
+
+        let numero = parseInt(prompt('Digite um número inteiro:'))
+        let anterior = 0, sequencia = 1, proximo = (anterior+sequencia)
+        let contador = 2
+
+        while (contador <= numero) {
+            alert(anterior+' + '+sequencia+' = '+proximo)
+            anterior = sequencia
+            sequencia = proximo
+            proximo = (anterior+sequencia)
+            contador++
+        }
+
+    </script>
+</body>
+
+</html>

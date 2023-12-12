@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>49) Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário usando o loop "while".</h2>
+
+    <script>
+
+        var numero = parseInt(prompt('Digite um número inteiro:'))
+        var contador = numero-1, fatorial = numero
+
+        while (contador > 0) {
+            fatorial = fatorial * contador
+            contador--
+        }
+
+        alert('O fatorial de '+numero+' é igual a '+fatorial+'.')
+
+    </script>
+</body>
+
+</html>

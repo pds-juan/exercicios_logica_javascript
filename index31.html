@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+<body>
+    <h2>31) Faça um programa que leia o valor do salário-mínimo e o salário de um funcionário, e exiba quantos salários-mínimos ele recebe.</h2>
+    
+    <script>
+
+        var salario_minimo = parseFloat(prompt('Digite o valor do salário mínimo:'))
+        var salario_do_funcionario = parseFloat(prompt('Digite o valor do salário do funcionário:'))
+        var recebe = (salario_do_funcionario / salario_minimo).toFixed(2)
+
+        alert('O funcionário recebe '+recebe+' salários mínimos.')
+
+    </script>
+</body>
+</html>

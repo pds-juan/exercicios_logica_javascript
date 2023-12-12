@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>5) Escreva um programa que leia o preço de um produto e a quantidade comprada, e calcule o valor total a ser pago com desconto de 10% se a quantidade for maior que 10 unidades.</h2>
+
+    <script>
+
+        var preco = parseFloat(prompt('Digite o preço do produto:'))
+        var quantidade = parseFloat(prompt('Digite a quantidade adquirida:'))
+
+        if (quantidade > 10) {
+            var valor_total = (preco * quantidade - (preco * quantidade * 0.1))
+        } else {
+            var valor_total = (preco * quantidade)
+        }
+
+        alert('Valor a pagar: R$ ' + valor_total + '.')
+
+    </script>
+</body>
+
+</html>

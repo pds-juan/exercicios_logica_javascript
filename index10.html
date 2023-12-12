@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios do WORD </title>
+</head>
+
+<body>
+    <h2>10) Faça um programa que leia um número inteiro e exiba a sua tabuada de multiplicação até o décimo valor.</h2>
+
+    <script>
+
+        var numero = parseInt(prompt('Digite o número a ser gerada a tabuada:'))
+        var contador = 0
+        var resultado
+
+        do {
+            contador++
+            resultado = numero * contador
+            alert(numero + ' x ' + contador + ' = ' + resultado)
+        } while (contador < 10);
+
+    </script>
+</body>
+
+</html>
